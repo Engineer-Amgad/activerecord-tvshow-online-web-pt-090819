@@ -17,3 +17,4 @@ if ENV["ACTIVE_RECORD_ENV"] == "test"
 end
 
 require_relative '../models/app/show'
+require_relative '../models/app/shows_controller'
