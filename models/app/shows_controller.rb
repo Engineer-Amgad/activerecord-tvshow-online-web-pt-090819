@@ -1,3 +1,3 @@
 def highest_rating
-  Show.where("rating > ?", 3)
+  Song.maximum(:rating)
 end
