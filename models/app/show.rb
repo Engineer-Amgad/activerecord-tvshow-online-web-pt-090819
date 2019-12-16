@@ -8,4 +8,9 @@ class Show < ActiveRecord::Base
     array = Show.where("rating = ?", self.highest_rating)
     array[0]
   end 
+  
+  def self.highest_rating
+    Show.maximum(:rating)
+  end
+  
 end
