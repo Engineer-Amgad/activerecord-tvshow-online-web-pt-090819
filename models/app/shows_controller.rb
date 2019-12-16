@@ -1,3 +1,3 @@
 def highest_rating
-  Show.where("number_of_stars > ?", 3)
+  Show.where("rating > ?", 3)
 end
