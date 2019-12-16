@@ -9,7 +9,7 @@ class Show < ActiveRecord::Base
     array[0]
   end 
   
-  def self.highest_rating
+  def self.lowest_rating
     Show.minimum(:rating)
   end
   
